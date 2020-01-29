@@ -1,0 +1,34 @@
+[
+	{
+		"name":"orange",
+		"type":"Fruit"
+	},
+	{
+		"name":"apple",
+		"type":"Fruit"
+	},
+	{
+		"name":"banana",
+		"type":"Fruit"
+	},
+	{
+		"name":"strawberry",
+		"type":"Fruit"
+	},
+	{
+		"name":"cucumber",
+		"type":"Vegetable"
+	},
+    {
+		"name":"beetroot",
+		"type":"Vegetable"
+	},
+    {
+		"name":"carrot",
+		"type":"Vegetable"
+	},
+    {
+		"name":"celery",
+		"type":"Vegetable"
+	}
+]
