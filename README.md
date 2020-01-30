@@ -1,6 +1,6 @@
 # Paranuara
 =============
-# Steps to try API
+# Steps to test API
 
 ### 1 build docker (estimated time building image 8 minutes)
 ```bash
