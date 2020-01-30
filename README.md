@@ -20,8 +20,8 @@ http://localhost:8000/companies/STRALUM/employees
 Provide the appropriate solution if the company does not have any employees.
 first of all you have to know who company has employees, for suppliyed data is NETBOOK
 http://localhost:8000/companies/NETBOOK/employees
-- this service returns an URL to associate the citizens who do not have an associated company
-- similar to this: http://localhost:8000/companies/NETBOOK/add_free_employees/ 
+* this service returns an URL to associate the citizens who do not have an associated company
+* similar to this: http://localhost:8000/companies/NETBOOK/add_free_employees/ 
 
 - Given 2 people, provide their information (Age, Name, Address, phone) and the list of their friends in common which have brown eyes and are still alive.
 http://localhost:8000/citizens/friends_in_common?users=XXX,XXX
