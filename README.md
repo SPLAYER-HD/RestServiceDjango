@@ -2,10 +2,9 @@
 =============
 # Steps to try API
 
-### 1 Local build
+### 1 build docker (estimated time building image 8 minutes)
 ```bash
 sudo docker-compose -f local.yml build
-sudo docker-compose -f local.yml up
 ```
 
 ### 2 load models on database
@@ -13,12 +12,18 @@ sudo docker-compose -f local.yml up
 sudo docker-compose -f local.yml run --rm django python manage.py makemigrations
 sudo docker-compose -f local.yml run --rm django python manage.py migrate
 ```
-### 3 load data from json (if you are going to change the json files please keep the same format and let them in the same folder)
+
+### 3 UP docker
+```bash
+sudo docker-compose -f local.yml up
+```
+
+### 4 load data from json (if you are going to change the json files please keep the same format and let them in the same folder)
 ```bash
 sudo docker-compose -f local.yml run --rm django python manage.py populate  companies.json company
 sudo docker-compose -f local.yml run --rm django python manage.py populate  people.json person
 ```
-### 4 Use API
+### 5 Use API
 - Given a company, the API needs to return all their employees. 
 
     http://localhost:8000/companies/STRALUM/employees
@@ -37,11 +42,11 @@ sudo docker-compose -f local.yml run --rm django python manage.py populate  peop
 
     http://localhost:8000/citizens/friends_in_common?users=XXX,XXX
 
-    Where XXX and XXX has to be the IDs of the citizens, to search their IDs use this url:
+    Where XXX and XXX has to be the IDs of the citizens, (possible values 1000,988) to search their IDs use this url:
 
     http://localhost:8000/citizens
 
-- Given 1 people, provide a list of fruits and vegetables they like.
+- Given 1 people, provide a list of fruits and vegetables they like (possible value 1000).
 
     http://localhost:8000/citizens/XXX/get_food
 
@@ -49,7 +54,7 @@ sudo docker-compose -f local.yml run --rm django python manage.py populate  peop
 
 If you want in the project root there is a Postman export with the End Points. (called: )
 
-### 5 Validate unit test and API Test
+### 6 Validate unit test and API Test
 ```bash
 sudo docker-compose -f local.yml run --rm django pytest
 ```
