@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "c8bab6a0-6b45-47db-855f-00f5d79b4f88",
+		"name": "paranuara",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "citizens",
+			"item": [
+				{
+					"name": "get_all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/citizens",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"citizens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/citizens/2000/get_food",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"citizens",
+								"2000",
+								"get_food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_friends_in_common",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/citizens/friends_in_common?users=2000,1999",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"citizens",
+								"friends_in_common"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "998",
+									"disabled": true
+								},
+								{
+									"key": "users",
+									"value": "2000,1999"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "companies",
+			"item": [
+				{
+					"name": "get_employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/companies/STRALUM/employees",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								"STRALUM",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_employees_empty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/companies/NETBOOK/employees",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								"NETBOOK",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_employees",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/companies/NETBOOK/add_free_employees/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								"NETBOOK",
+								"add_free_employees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/companies/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "food",
+			"item": [
+				{
+					"name": "get_all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:8000/foods",
+							"host": [
+								"{{host}}"
+							],
+							"port": "8000",
+							"path": [
+								"foods"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
