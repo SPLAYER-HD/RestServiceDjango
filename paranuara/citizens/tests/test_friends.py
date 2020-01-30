@@ -185,15 +185,10 @@ class GetFriendsInCommonAPITestCase(APITestCase):
         )
 
         # URL
-        self.url = '/citizens/friends_in_common/'.format(
-            2000,
-            1999
-        )
+        self.url = '/citizens/friends_in_common/'
 
     def test_response_success(self):
         """Verify request succeed."""
-        print(self.url)
-        print("################################33")
         request = self.client.get(self.url, {'users':str(self.citizen1.id)+','+str(self.citizen2.id)})
         #import pdb; pdb.set_trace()
         self.assertEqual(request.status_code, status.HTTP_200_OK)

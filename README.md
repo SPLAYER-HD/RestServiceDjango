@@ -53,6 +53,7 @@ If you want in the project root there is a Postman export with the End Points. (
 ```bash
 sudo docker-compose -f local.yml run --rm django pytest
 ```
+
 # Additional Information
 
 ### Celery Flower (the process to asociate citizens free to an empty company is released by celery)
