@@ -52,7 +52,7 @@ sudo docker-compose -f local.yml run --rm django python manage.py populate  peop
 
     Where XXX is the citizen ID who you want to find.
 
-If you want in the project root there is a Postman export with the End Points. (called: )
+If you want in the project root there is a Postman export with the End Points. (called: paranuara.postman_collection.json)
 
 ### 6 Validate unit test and API Test
 ```bash
