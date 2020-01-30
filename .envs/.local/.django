@@ -1,0 +1,9 @@
+# Redis
+REDIS_URL=redis://redis:6379/0
+
+# Flower
+CELERY_FLOWER_USER=paranuara
+CELERY_FLOWER_PASSWORD=P4r4nu4r4
+
+# PATHS
+FILES_PATH=/files

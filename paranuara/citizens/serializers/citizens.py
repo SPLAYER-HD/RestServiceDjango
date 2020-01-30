@@ -28,7 +28,7 @@ class SimpleCitizenModelSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta class."""
         model = Citizen
-        fields = ['first_name', 'last_name', 'age', 'address', 'phone']
+        fields = ['first_name', 'last_name', 'age', 'address', 'phone', 'username']
 
 
 class RelationshipModelSerializer(serializers.ModelSerializer):

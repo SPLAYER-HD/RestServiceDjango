@@ -93,21 +93,26 @@ class Citizen(ParanuaraModel, AbstractUser):
     company = models.ForeignKey(
         Company,
         related_name='employees_company',
-        on_delete=models.SET_NULL, null=True
+        on_delete=models.SET_NULL, 
+        null=True
     )
 
     about = models.CharField(
         max_length=1000,
-        blank=True
+        blank=True,
+        null=True
     )
 
     greeting = models.CharField(
         max_length=1000,
-        blank=True
+        blank=True,
+        null=True
     )
 
     tags = JSONField(
-        default=None
+        default=None,
+        blank=True,
+        null=True
     )
 
     REQUIRED_FIELDS = ['has_died', 'eyeColor', 'index']
