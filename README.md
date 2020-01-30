@@ -2,12 +2,12 @@
 =============
 # Steps to test API
 
-### 1 build docker (estimated time building image 8 minutes)
+### 1 Build docker (estimated time building image 8 minutes)
 ```bash
 sudo docker-compose -f local.yml build
 ```
 
-### 2 load models on database
+### 2 Load models on database
 ```bash
 sudo docker-compose -f local.yml run --rm django python manage.py makemigrations
 sudo docker-compose -f local.yml run --rm django python manage.py migrate
@@ -18,7 +18,7 @@ sudo docker-compose -f local.yml run --rm django python manage.py migrate
 sudo docker-compose -f local.yml up
 ```
 
-### 4 load data from json (if you are going to change the json files please keep the same format and let them in the same folder)
+### 4 Load data from json (if you are going to change the json files please keep the same format and let them in the same folder)
 ```bash
 sudo docker-compose -f local.yml run --rm django python manage.py populate  companies.json company
 sudo docker-compose -f local.yml run --rm django python manage.py populate  people.json person
