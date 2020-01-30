@@ -49,7 +49,7 @@ sudo docker-compose -f local.yml run --rm django python manage.py populate  peop
 
 If you want in the project root there is a Postman export with the End Points. (called: )
 
-### 5 Validate unit test
+### 5 Validate unit test and API Test
 ```bash
 sudo docker-compose -f local.yml run --rm django pytest
 ```
